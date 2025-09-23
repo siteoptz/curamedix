@@ -1,0 +1,88 @@
+{
+  "module_id": "hero_section",
+  "label": "Hero Section",
+  "icon": "hero",
+  "categories": ["sections"],
+  "fields": [
+    {
+      "id": "show_badge",
+      "name": "show_badge",
+      "label": "Show Badge",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "badge_text",
+      "name": "badge_text",
+      "label": "Badge Text",
+      "type": "text",
+      "default": "💰 Limited Time: 100% Tax Write-Off Available"
+    },
+    {
+      "id": "title",
+      "name": "title",
+      "label": "Title",
+      "type": "richtext",
+      "default": "Get FDA-Approved <span class='highlight'>Shockwave Therapy</span> Equipment"
+    },
+    {
+      "id": "subtitle",
+      "name": "subtitle",
+      "label": "Subtitle",
+      "type": "text",
+      "default": "Join 3,000+ practices achieving 95% success rates. Write off 100% of your investment with Section 179 before year-end. Immediate ROI guaranteed."
+    },
+    {
+      "id": "show_stats",
+      "name": "show_stats",
+      "label": "Show Statistics",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "stats",
+      "name": "stats",
+      "label": "Statistics",
+      "type": "group",
+      "repeater": {
+        "min": 1,
+        "max": 4,
+        "default": 3
+      },
+      "children": [
+        {
+          "id": "number",
+          "name": "number",
+          "label": "Stat Number",
+          "type": "text"
+        },
+        {
+          "id": "label",
+          "name": "label",
+          "label": "Stat Label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "primary_cta_text",
+      "name": "primary_cta_text",
+      "label": "Primary CTA Text",
+      "type": "text",
+      "default": "Get Instant Quote + Tax Savings"
+    },
+    {
+      "id": "secondary_cta_text",
+      "name": "secondary_cta_text",
+      "label": "Secondary CTA Text",
+      "type": "text",
+      "default": "Calculate Your ROI"
+    },
+    {
+      "id": "hero_image",
+      "name": "hero_image",
+      "label": "Hero Image",
+      "type": "image"
+    }
+  ]
+}

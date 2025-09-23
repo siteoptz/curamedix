@@ -1,0 +1,50 @@
+<!-- Section 179 Tax Benefits Module -->
+<section class="section-179">
+    <div class="container">
+        <div class="section-179-wrapper">
+            <div class="section-179-content">
+                <div class="tax-badge">{{ module.badge_text }}</div>
+                <h2 class="section-title">{{ module.title }}</h2>
+                <p class="section-179-intro">{{ module.intro_text }}</p>
+                
+                <div class="tax-benefits-grid">
+                    {% for benefit in module.benefits %}
+                    <div class="tax-benefit-card">
+                        <div class="benefit-icon">{{ benefit.icon }}</div>
+                        <h3>{{ benefit.title }}</h3>
+                        <p>{{ benefit.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                {% if module.show_calculator %}
+                <div class="tax-calculator-preview">
+                    <h3>{{ module.calculator_title }}</h3>
+                    <div class="calculator-example">
+                        <div class="calc-row">
+                            <span>Equipment Cost:</span>
+                            <span class="calc-value">${{ module.equipment_cost }}</span>
+                        </div>
+                        <div class="calc-row">
+                            <span>Tax Rate ({{ module.tax_rate }}%):</span>
+                            <span class="calc-value">${{ module.tax_savings }}</span>
+                        </div>
+                        <div class="calc-row highlight-row">
+                            <span>Your Net Cost:</span>
+                            <span class="calc-value">${{ module.net_cost }}</span>
+                        </div>
+                    </div>
+                    <p class="calculator-note">{{ module.calculator_note }}</p>
+                </div>
+                {% endif %}
+
+                <div class="section-179-cta">
+                    <button class="cta-button primary-cta large pulse" onclick="openBookingModal()">
+                        {{ module.cta_text }}
+                    </button>
+                    <p class="deadline-warning">{{ module.deadline_warning }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

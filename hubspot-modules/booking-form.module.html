@@ -1,0 +1,78 @@
+<!-- HubSpot Booking Form Module -->
+<div id="bookingModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeBookingModal()">&times;</span>
+        <h2>{{ module.form_title }}</h2>
+        <p>{{ module.form_subtitle }}</p>
+        
+        <!-- HubSpot Form Embed -->
+        {% if module.hubspot_form_id %}
+            <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+            <![endif]-->
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+                hbspt.forms.create({
+                    region: "{{ module.form_region|default('na1') }}",
+                    portalId: "{{ module.portal_id }}",
+                    formId: "{{ module.hubspot_form_id }}",
+                    css: "",
+                    cssClass: "booking-form",
+                    onFormSubmit: function($form) {
+                        // Custom submission handling
+                        setTimeout(function() {
+                            closeBookingModal();
+                        }, 2000);
+                    },
+                    onFormReady: function() {
+                        // Add custom styling to form fields
+                        const formFields = document.querySelectorAll('.hs-form-field');
+                        formFields.forEach(field => {
+                            field.classList.add('form-group');
+                        });
+                    }
+                });
+            </script>
+        {% else %}
+            <!-- Fallback form if HubSpot form ID not configured -->
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="organization">Organization*</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+                <div class="form-group">
+                    <label for="specialty">Specialty*</label>
+                    <select id="specialty" name="specialty" required>
+                        <option value="">Select your specialty</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="sports-medicine">Sports Medicine</option>
+                        <option value="pain-management">Pain Management</option>
+                        <option value="rehabilitation">Rehabilitation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button primary-cta full-width">{{ module.submit_button_text }}</button>
+            </form>
+        {% endif %}
+    </div>
+</div>

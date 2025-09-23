@@ -1,0 +1,46 @@
+<!-- Hero Section Module for HubSpot -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                {% if module.show_badge %}
+                <div class="limited-offer-badge">{{ module.badge_text }}</div>
+                {% endif %}
+                
+                <h1 class="hero-title">{{ module.title }}</h1>
+                <p class="hero-subtitle">{{ module.subtitle }}</p>
+                
+                {% if module.show_stats %}
+                <div class="hero-stats">
+                    {% for stat in module.stats %}
+                    <div class="stat">
+                        <span class="stat-number">{{ stat.number }}</span>
+                        <span class="stat-label">{{ stat.label }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <div class="hero-cta">
+                    {% if module.primary_cta_text %}
+                    <button class="cta-button primary-cta pulse" onclick="openBookingModal()">
+                        {{ module.primary_cta_text }}
+                    </button>
+                    {% endif %}
+                    
+                    {% if module.secondary_cta_text %}
+                    <button class="cta-button secondary-cta">
+                        {{ module.secondary_cta_text }}
+                    </button>
+                    {% endif %}
+                </div>
+            </div>
+            
+            {% if module.hero_image %}
+            <div class="hero-image">
+                <img src="{{ module.hero_image.src }}" alt="{{ module.hero_image.alt }}" class="featured-image">
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
