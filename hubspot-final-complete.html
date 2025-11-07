@@ -369,8 +369,32 @@
         .section-subtitle {
             font-size: 1.2rem;
             color: var(--text-light);
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+        }
+        
+        .conditions-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .condition-item {
+            background: var(--light-color);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .solutions-cta {
+            text-align: center;
+            margin-top: 40px;
         }
 
         .solutions-grid {
@@ -1226,8 +1250,22 @@
     <section id="solutions" class="solutions">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Revolutionary Shockwave Solutions</h2>
-                <p class="section-subtitle">FDA-approved technology delivering measurable results across multiple specialties</p>
+                <h2 class="section-title">Clinicians leading in outcomes are leading with Shockwave.</h2>
+                <p class="section-subtitle">If you're treating patients with chronic or acute musculoskeletal conditions without Shockwave Therapy, you're missing a proven opportunity to help them heal faster, and risking that they'll seek solutions elsewhere.</p>
+                
+                <div class="conditions-list">
+                    <div class="condition-item">Plantar fasciitis</div>
+                    <div class="condition-item">Tendonitis</div>
+                    <div class="condition-item">Calcific tendinitis</div>
+                    <div class="condition-item">Achilles tendonitis</div>
+                    <div class="condition-item">Tennis elbow</div>
+                    <div class="condition-item">Golfer's elbow</div>
+                    <div class="condition-item">Etc</div>
+                </div>
+                
+                <div class="solutions-cta">
+                    <button class="cta-button primary-cta" onclick="openHubSpotModal()">Ready for game-changing patient outcomes and practice growth?</button>
+                </div>
             </div>
             <div class="solutions-grid">
                 <div class="solution-card featured">
