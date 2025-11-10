@@ -1,0 +1,297 @@
+{
+  "high_priority_keywords": [
+    {
+      "keyword": "section 179 deduction 2025",
+      "volume": 8400,
+      "cpc": "$2.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$1890.00"
+    },
+    {
+      "keyword": "plantar fasciitis shockwave therapy",
+      "volume": 3300,
+      "cpc": "$5.75",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1897.50"
+    },
+    {
+      "keyword": "section 179 medical equipment",
+      "volume": 3100,
+      "cpc": "$4.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$1395.00"
+    },
+    {
+      "keyword": "medical equipment tax deduction",
+      "volume": 2900,
+      "cpc": "$3.75",
+      "competition": "low",
+      "monthly_budget_estimate": "$1087.50"
+    },
+    {
+      "keyword": "extracorporeal shockwave therapy",
+      "volume": 2400,
+      "cpc": "$7.25",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1740.00"
+    },
+    {
+      "keyword": "pain management equipment",
+      "volume": 2200,
+      "cpc": "$6.50",
+      "competition": "high",
+      "monthly_budget_estimate": "$1430.00"
+    },
+    {
+      "keyword": "chronic pain shockwave therapy",
+      "volume": 2100,
+      "cpc": "$5.50",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1155.00"
+    },
+    {
+      "keyword": "shockwave therapy equipment",
+      "volume": 1900,
+      "cpc": "$8.50",
+      "competition": "high",
+      "monthly_budget_estimate": "$1615.00"
+    },
+    {
+      "keyword": "tendonitis shockwave treatment",
+      "volume": 1800,
+      "cpc": "$6.25",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1125.00"
+    },
+    {
+      "keyword": "non invasive pain treatment",
+      "volume": 1700,
+      "cpc": "$5.25",
+      "competition": "medium",
+      "monthly_budget_estimate": "$892.50"
+    }
+  ],
+  "medium_priority_keywords": [
+    {
+      "keyword": "orthopedic shockwave therapy",
+      "volume": 1500,
+      "cpc": "$7.50",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1125.00"
+    },
+    {
+      "keyword": "sports injury shockwave",
+      "volume": 1400,
+      "cpc": "$6.75",
+      "competition": "medium",
+      "monthly_budget_estimate": "$945.00"
+    },
+    {
+      "keyword": "shockwave therapy device cost",
+      "volume": 1300,
+      "cpc": "$7.50",
+      "competition": "high",
+      "monthly_budget_estimate": "$975.00"
+    },
+    {
+      "keyword": "medical device tax write off",
+      "volume": 1200,
+      "cpc": "$3.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$420.00"
+    },
+    {
+      "keyword": "buy shockwave therapy machine",
+      "volume": 1200,
+      "cpc": "$10.25",
+      "competition": "high",
+      "monthly_budget_estimate": "$1230.00"
+    },
+    {
+      "keyword": "FDA approved shockwave therapy",
+      "volume": 1100,
+      "cpc": "$8.75",
+      "competition": "high",
+      "monthly_budget_estimate": "$962.50"
+    },
+    {
+      "keyword": "regenerative medicine equipment",
+      "volume": 1100,
+      "cpc": "$7.75",
+      "competition": "medium",
+      "monthly_budget_estimate": "$852.50"
+    },
+    {
+      "keyword": "calcific tendinitis treatment",
+      "volume": 990,
+      "cpc": "$7.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$717.75"
+    },
+    {
+      "keyword": "sports medicine shockwave",
+      "volume": 980,
+      "cpc": "$8.25",
+      "competition": "medium",
+      "monthly_budget_estimate": "$808.50"
+    },
+    {
+      "keyword": "shockwave therapy CPT codes",
+      "volume": 890,
+      "cpc": "$2.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$200.25"
+    }
+  ],
+  "low_competition_opportunities": [
+    {
+      "keyword": "section 179 deduction 2025",
+      "volume": 8400,
+      "cpc": "$2.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$1890.00"
+    },
+    {
+      "keyword": "section 179 medical equipment",
+      "volume": 3100,
+      "cpc": "$4.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$1395.00"
+    },
+    {
+      "keyword": "medical equipment tax deduction",
+      "volume": 2900,
+      "cpc": "$3.75",
+      "competition": "low",
+      "monthly_budget_estimate": "$1087.50"
+    },
+    {
+      "keyword": "medical device tax write off",
+      "volume": 1200,
+      "cpc": "$3.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$420.00"
+    },
+    {
+      "keyword": "calcific tendinitis treatment",
+      "volume": 990,
+      "cpc": "$7.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$717.75"
+    },
+    {
+      "keyword": "shockwave therapy CPT codes",
+      "volume": 890,
+      "cpc": "$2.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$200.25"
+    },
+    {
+      "keyword": "shockwave therapy billing codes",
+      "volume": 670,
+      "cpc": "$2.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$167.50"
+    },
+    {
+      "keyword": "shockwave therapy equipment financing",
+      "volume": 390,
+      "cpc": "$5.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$214.50"
+    },
+    {
+      "keyword": "shockwave therapy ROI",
+      "volume": 320,
+      "cpc": "$4.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$136.00"
+    }
+  ],
+  "section_179_keywords": [
+    {
+      "keyword": "section 179 deduction 2025",
+      "volume": 8400,
+      "cpc": "$2.25",
+      "competition": "low",
+      "monthly_budget_estimate": "$1890.00"
+    },
+    {
+      "keyword": "section 179 medical equipment",
+      "volume": 3100,
+      "cpc": "$4.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$1395.00"
+    },
+    {
+      "keyword": "medical equipment tax deduction",
+      "volume": 2900,
+      "cpc": "$3.75",
+      "competition": "low",
+      "monthly_budget_estimate": "$1087.50"
+    },
+    {
+      "keyword": "medical device tax write off",
+      "volume": 1200,
+      "cpc": "$3.50",
+      "competition": "low",
+      "monthly_budget_estimate": "$420.00"
+    }
+  ],
+  "treatment_specific_keywords": [
+    {
+      "keyword": "plantar fasciitis shockwave therapy",
+      "volume": 3300,
+      "cpc": "$5.75",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1897.50"
+    },
+    {
+      "keyword": "chronic pain shockwave therapy",
+      "volume": 2100,
+      "cpc": "$5.50",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1155.00"
+    },
+    {
+      "keyword": "tendonitis shockwave treatment",
+      "volume": 1800,
+      "cpc": "$6.25",
+      "competition": "medium",
+      "monthly_budget_estimate": "$1125.00"
+    },
+    {
+      "keyword": "sports injury shockwave",
+      "volume": 1400,
+      "cpc": "$6.75",
+      "competition": "medium",
+      "monthly_budget_estimate": "$945.00"
+    },
+    {
+      "keyword": "sports medicine shockwave",
+      "volume": 980,
+      "cpc": "$8.25",
+      "competition": "medium",
+      "monthly_budget_estimate": "$808.50"
+    }
+  ],
+  "total_monthly_searches": 48380,
+  "average_cpc": "$6.36",
+  "budget_recommendations": {
+    "conservative": {
+      "monthly": "$2,500 - $5,000",
+      "focus": "Section 179 and low competition keywords",
+      "expected_clicks": "400-800 clicks/month"
+    },
+    "moderate": {
+      "monthly": "$5,000 - $10,000",
+      "focus": "Mix of brand, Section 179, and treatment keywords",
+      "expected_clicks": "800-1,600 clicks/month"
+    },
+    "aggressive": {
+      "monthly": "$10,000 - $20,000",
+      "focus": "Full keyword portfolio including competitive terms",
+      "expected_clicks": "1,600-3,200 clicks/month"
+    }
+  }
+}

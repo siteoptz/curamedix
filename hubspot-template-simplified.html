@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    
+    {{ standard_header_includes }}
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ get_asset_url('curamedix/assets/curamedix-styles.css') }}">
+    
+    <!-- Additional Page-specific Styles -->
+    <style>
+        /* Base styles that work without external CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Ensure drag-and-drop areas are visible */
+        .dnd-area {
+            min-height: 100px;
+            border: 2px dashed #ccc;
+            margin: 20px 0;
+            padding: 20px;
+        }
+        
+        .dnd-area:not(:empty) {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <img src="{{ get_asset_url('curamedix/assets/logo.jpg') }}" alt="CuraMedix" height="40">
+                </div>
+                <div class="nav-menu">
+                    <a href="#solutions">Solutions</a>
+                    <a href="#technology">Technology</a>
+                    <a href="#results">Results</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Drag and Drop Area -->
+    {% dnd_area "main_content" %}
+        {% dnd_section %}
+            {% dnd_column %}
+                {% dnd_row %}
+                    <!-- Hero Section -->
+                    {% dnd_module path="@hubspot/rich_text" %}
+                        {% module_attribute "html" %}
+                            <section class="hero" style="background: linear-gradient(135deg, #577b33 0%, #4a6a2b 100%); color: white; padding: 80px 20px; text-align: center;">
+                                <div class="container">
+                                    <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+                                        <div style="flex: 1; min-width: 300px;">
+                                            <div style="background: rgba(255,107,53,0.9); color: white; padding: 8px 16px; border-radius: 20px; display: inline-block; margin-bottom: 20px; font-weight: 600;">
+                                                💰 Limited Time: 100% Tax Write-Off Available
+                                            </div>
+                                            <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2;">
+                                                Get FDA-Approved <span style="color: #FF6B35;">Shockwave Therapy</span> Equipment
+                                            </h1>
+                                            <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; line-height: 1.6;">
+                                                Join 3,000+ practices achieving 95% success rates. Write off 100% of your investment with Section 179 before year-end.
+                                            </p>
+                                            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                                                <button onclick="document.getElementById('contact-form').scrollIntoView()" style="background: #FF6B35; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer;">
+                                                    Get Instant Quote + Tax Savings
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div style="flex: 1; min-width: 300px;">
+                                            <img src="{{ get_asset_url('curamedix/assets/Untitled design (15).png') }}" alt="Shockwave Equipment" style="width: 100%; max-width: 500px; height: auto; border-radius: 12px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        {% end_module_attribute %}
+                    {% end_dnd_module %}
+                {% end_dnd_row %}
+                
+                {% dnd_row %}
+                    <!-- Contact Form Section -->
+                    {% dnd_module path="@hubspot/form" %}
+                        {% module_attribute "form_to_use" is_json=true %}{"response_type": "inline", "message": "Thanks for submitting the form.", "redirect_url": ""}{% end_module_attribute %}
+                        {% module_attribute "title" %}Schedule Your Demo{% end_module_attribute %}
+                        {% module_attribute "form_follow_up_message" %}Thank you! We'll contact you within 24 hours.{% end_module_attribute %}
+                    {% end_dnd_module %}
+                {% end_dnd_row %}
+                
+                {% dnd_row %}
+                    <!-- Additional Content Area -->
+                    {% dnd_module path="@hubspot/rich_text" %}
+                        {% module_attribute "html" %}
+                            <section id="contact-form" style="padding: 60px 20px; background: #f8f9fa;">
+                                <div class="container" style="text-align: center;">
+                                    <h2>Ready to Transform Your Practice?</h2>
+                                    <p>Get your personalized quote and tax savings calculation today.</p>
+                                </div>
+                            </section>
+                        {% end_module_attribute %}
+                    {% end_dnd_module %}
+                {% end_dnd_row %}
+            {% end_dnd_column %}
+        {% end_dnd_section %}
+    {% end_dnd_area %}
+
+    <!-- Footer -->
+    <footer style="background: #2C3E50; color: white; padding: 40px 20px; text-align: center;">
+        <div class="container">
+            <p>&copy; {{ year }} CuraMedix. All rights reserved.</p>
+            <p>Contact: 1-800-CURAMEDIX | sales@curamedix.com</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ get_asset_url('curamedix/assets/curamedix-scripts.js') }}"></script>
+    
+    {{ standard_footer_includes }}
+</body>
+</html>

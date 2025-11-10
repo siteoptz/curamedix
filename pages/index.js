@@ -26,6 +26,7 @@ export default function Home() {
       <Head>
         <title>CuraMedix - Revolutionary Shockwave Therapy Solutions</title>
         <meta name="description" content="Industry-leading extracorporeal shockwave therapy solutions delivering unprecedented patient outcomes and ROI for healthcare providers." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -1,19 +1,10 @@
-<!--
-  templateType: "page"
-  label: "Landing page - information request 2"
-  screenshotPath: "../images/template-previews/lp-information-request-two.png"
-  scaffoldSchemaPath: "./schemas/lp-information-request-two.scaffold_schema.json"
-  goals:
-  - "GET_CALLBACKS"
-  isAvailableForNewContent: true
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ content.html_title|default("Shockwave Therapy Equipment | Save 100% with Section 179 | CuraMedix") }}</title>
-    <meta name="description" content="{{ content.meta_description|default('FDA-approved Shockwave therapy equipment with 95% success rate. Write off 100% with Section 179 tax deduction. Get instant ROI analysis.') }}">
+    <meta name="description" content="{{ content.meta_description|default('FDA-approved shockwave therapy equipment with 95% success rate. Write off 100% with Section 179 tax deduction. Get instant ROI analysis.') }}">
     
     {{ standard_header_includes }}
     
@@ -44,9 +35,7 @@
             font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            background-color: var(--dark-color);
-            margin: 0;
-            padding: 0;
+            background-color: #FFFFFF;
         }
 
         .container {
@@ -55,11 +44,6 @@
             padding: 0 20px;
         }
 
-        /* Main content wrapper */
-        .main-content {
-            background-color: #FFFFFF;
-        }
-        
         /* Header */
         .header {
             background: #FFFFFF;
@@ -192,12 +176,12 @@
         }
 
         .primary-cta {
-            background: var(--primary-color);
+            background: #FF6B35;
             color: white;
         }
 
         .primary-cta:hover {
-            background: var(--secondary-color);
+            background: #e55a2b;
             transform: translateY(-2px);
         }
 
@@ -218,7 +202,7 @@
 
         .featured-image {
             width: 100%;
-            max-width: 625px;
+            max-width: 500px;
             height: auto;
             border-radius: 12px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.3);
@@ -256,10 +240,6 @@
             font-size: 1rem;
         }
 
-        .urgency-cta:hover {
-            background: var(--light-color);
-        }
-
         /* Trust Section */
         .trust-section {
             padding: 40px 20px;
@@ -276,83 +256,14 @@
         .trust-logos {
             display: flex;
             justify-content: center;
-            gap: 25px;
+            gap: 40px;
             flex-wrap: wrap;
-            align-items: center;
         }
 
         .trust-logo {
-            height: 80px;
-            max-width: 180px;
-            object-fit: contain;
-            opacity: 0.9;
-            transition: all 0.3s ease;
-            flex-shrink: 1;
-        }
-        
-        .trust-logo:hover {
-            opacity: 1;
-            transform: translateY(-2px);
-        }
-        
-        .trust-logo.transparent-bg {
-            background: transparent;
-            mix-blend-mode: multiply;
-        }
-
-        /* Advantages Section */
-        .advantages {
-            padding: 80px 20px;
-            background: white;
-        }
-
-        .advantages-wrapper {
-            display: flex;
-            align-items: center;
-            gap: 60px;
-            flex-wrap: wrap;
-        }
-
-        .advantages-content {
-            flex: 1;
-            min-width: 400px;
-        }
-
-        .advantages-image {
-            flex: 1;
-            min-width: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .advantages-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-        }
-
-        .advantages-list {
-            list-style: none;
-            margin-top: 30px;
-        }
-
-        .advantages-list li {
-            padding: 10px 0;
-            color: var(--text-dark);
-            position: relative;
-            padding-left: 25px;
-            line-height: 1.6;
-        }
-
-        .advantages-list li:before {
-            content: "•";
-            color: var(--primary-color);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.2rem;
+            color: var(--text-light);
+            font-weight: 600;
+            font-size: 0.9rem;
         }
 
         /* Solutions Section */
@@ -374,32 +285,8 @@
         .section-subtitle {
             font-size: 1.2rem;
             color: var(--text-light);
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
-        }
-        
-        .conditions-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin: 30px auto;
-            max-width: 800px;
-        }
-        
-        .condition-item {
-            background: var(--light-color);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: var(--text-dark);
-            border: 2px solid var(--primary-color);
-        }
-        
-        .solutions-cta {
-            text-align: center;
-            margin-top: 40px;
         }
 
         .solutions-grid {
@@ -425,8 +312,8 @@
         }
 
         .solution-icon-img {
-            width: 226px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -791,94 +678,8 @@
         .footer {
             background: var(--dark-color);
             color: white;
-            padding: 40px 0;
+            padding: 40px 20px;
             text-align: center;
-            width: 100vw;
-            margin-left: calc(50% - 50vw);
-            margin-right: calc(50% - 50vw);
-            margin-top: 0;
-            margin-bottom: 0;
-            position: relative;
-        }
-        
-        .footer .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Remove any bottom margins/padding from html/body */
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 10000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            animation: fadeIn 0.3s;
-        }
-        
-        .modal-content {
-            background-color: white;
-            margin: 2% auto;
-            padding: 0;
-            border-radius: 12px;
-            width: 90%;
-            max-width: 600px;
-            max-height: 90vh;
-            overflow-y: auto;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            animation: slideIn 0.3s;
-            position: relative;
-        }
-        
-        .modal-header {
-            padding: 30px 30px 20px 30px;
-            border-bottom: 1px solid #E0E6ED;
-        }
-        
-        .modal-body {
-            padding: 20px 30px 30px 30px;
-        }
-        
-        .close {
-            color: #999;
-            float: right;
-            font-size: 28px;
-            font-weight: 300;
-            cursor: pointer;
-            line-height: 1;
-            position: absolute;
-            right: 20px;
-            top: 15px;
-        }
-        
-        .close:hover {
-            color: #333;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideIn {
-            from {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
         }
 
         /* Animations */
@@ -890,275 +691,84 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            /* Prevent horizontal overflow */
-            html, body {
-                overflow-x: hidden !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                position: relative;
-            }
-            
-            body {
-                margin: 0;
-                padding: 0;
-            }
-            
-            * {
-                max-width: 100% !important;
-                box-sizing: border-box;
-            }
-            
-            .main-content {
-                width: 100%;
-                max-width: 100%;
-                overflow-x: hidden;
-            }
-            
-            .container {
-                width: 100%;
-                max-width: 100%;
-                margin: 0 auto;
-                padding: 0 15px;
-                box-sizing: border-box;
-            }
-            
-            /* Header */
-            .nav-menu {
-                display: none;
-            }
-            
-            /* Hero Section */
-            .hero {
-                padding: 3rem 0;
-                width: 100%;
-                position: relative;
-            }
-            
-            .hero-content {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                width: 100%;
-                text-align: center;
-                align-items: center;
-            }
-            
-            .hero-text {
-                width: 100%;
-                text-align: center;
-                order: 2;
-            }
-            
-            .hero-image {
-                width: 100%;
-                order: 1;
-                display: flex;
-                justify-content: center;
-            }
-            
             .hero-title {
-                font-size: 2.5rem;
-                text-align: center;
-                margin: 0 0 1.5rem 0;
-                width: 100%;
+                font-size: 2rem;
             }
             
             .hero-subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
+            }
+            
+            .hero-content {
                 text-align: center;
-                margin: 0 0 2rem 0;
-                width: 100%;
+            }
+            
+            .hero-text {
+                text-align: center;
             }
             
             .hero-stats {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: center;
-                width: 100%;
-                margin: 0 0 2rem 0;
-            }
-            
-            .stat {
-                text-align: center;
-                width: 100%;
+                justify-content: center;
             }
             
             .hero-cta {
-                flex-direction: column;
-                width: 100%;
-                align-items: center;
-                gap: 1rem;
+                justify-content: center;
             }
             
             .cta-button {
-                width: auto;
-                min-width: 250px;
-                text-align: center;
+                width: 100%;
                 margin-bottom: 10px;
             }
             
-            .featured-image {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-            }
-            
-            /* Technology Section - using same pattern as hero section */
-            .technology {
-                padding: 3rem 0;
-                width: 100%;
-                position: relative;
-            }
-            
-            .tech-wrapper {
-                display: flex;
+            .form-row {
                 flex-direction: column;
-                gap: 2rem;
-                width: 100%;
+                gap: 0;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+
+            .tech-wrapper {
                 text-align: center;
+                flex-direction: column;
                 align-items: center;
             }
 
             .tech-content {
-                width: 100%;
+                min-width: 100%;
                 text-align: center;
-                order: 1;
             }
-            
-            .tech-content h2 {
-                font-size: 2.5rem;
-                text-align: center;
-                margin: 0 auto 1.5rem auto;
-                width: 100%;
-                max-width: 100%;
-            }
-            
-            .tech-description {
-                font-size: 1.1rem;
-                text-align: center;
-                margin: 0 auto 2rem auto;
-                width: 100%;
-                max-width: 100%;
+
+            .tech-visual {
+                min-width: 100%;
             }
 
             .tech-features {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                align-items: center;
-                width: 100%;
-                margin: 0 0 2rem 0;
+                justify-content: center;
             }
 
             .tech-feature {
-                display: flex;
-                align-items: flex-start;
-                gap: 1rem;
+                justify-content: center;
                 text-align: left;
-                width: 100%;
                 max-width: 350px;
                 margin: 0 auto;
             }
 
-            .tech-visual {
-                width: 100%;
-                order: 2;
-                display: flex;
-                justify-content: center;
-            }
-
             .tech-stats {
-                display: none;
-            }
-            
-            .tech-stat {
-                display: none;
-            }
-
-            .tech-content .cta-button {
-                width: auto;
-                min-width: 250px;
-                text-align: center;
-                margin: 2rem auto 0 auto;
-                display: block;
-            }
-
-            /* Advantages Section - Mobile styles */
-            .advantages {
-                padding: 3rem 0;
-                width: 100%;
-                position: relative;
-                text-align: center;
-            }
-            
-            .advantages .container {
-                width: 100%;
-                max-width: 100%;
-                margin: 0 auto;
-                padding: 0 15px;
-                box-sizing: border-box;
-            }
-            
-            .advantages-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                width: 100%;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .advantages-content {
-                width: 100%;
-                text-align: center;
-                order: 1;
-                max-width: 100%;
-            }
-            
-            .advantages-content h2 {
-                font-size: 2rem;
-                text-align: center;
-                margin: 0 auto 1.5rem auto;
-                width: 100%;
-                max-width: 100%;
-                line-height: 1.2;
-            }
-            
-            .advantages-list {
-                text-align: left;
-                max-width: 90%;
-                margin: 1rem auto;
-                padding-left: 0;
-            }
-            
-            .advantages-list li {
-                margin-bottom: 1rem;
-                line-height: 1.6;
-                padding-left: 25px;
-            }
-            
-            .advantages-image {
-                width: 100%;
-                order: 2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .advantages-image img {
-                max-width: 90%;
-                width: auto;
-                height: auto;
+                grid-template-columns: 1fr;
+                max-width: 350px;
                 margin: 0 auto;
             }
 
-            /* Other sections */
+            .technology .cta-button {
+                margin: 0 auto;
+                display: inline-block;
+            }
+
             .urgency-content {
                 flex-direction: column;
                 gap: 15px;
-                text-align: center;
-                padding: 0 15px;
             }
 
             .solutions-grid {
@@ -1172,42 +782,10 @@
             .tax-benefits-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .form-row {
-                flex-direction: column;
-                gap: 0;
-            }
-            
-            /* Modal adjustments */
-            .modal-content {
-                width: 95%;
-                margin: 5% auto;
-            }
-            
-            .modal-header,
-            .modal-body {
-                padding: 20px;
-            }
-            
-            /* Footer full width */
-            .footer {
-                width: 100vw !important;
-                margin-left: calc(50% - 50vw) !important;
-                margin-right: calc(50% - 50vw) !important;
-                box-sizing: border-box;
-            }
-            
-            .footer .container {
-                width: 100%;
-                max-width: 100%;
-                padding: 0 15px;
-                box-sizing: border-box;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="main-content">
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -1230,19 +808,34 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <div class="limited-offer-badge">Limited Time: 2025 Tax Write-Off Available</div>
+                <div class="limited-offer-badge">💰 Limited Time: 100% Tax Write-Off Available</div>
                 
-                <h1 class="hero-title">Not All Shockwave is Created Equal.</h1>
-                <p class="hero-subtitle">Choose FDA-Approved, evidence-based radial pressure wave and focused Shockwave devices from CuraMedix, the #1 Trusted STORZ Medical U.S. Distribution Partner.</p>
+                <h1 class="hero-title">Get FDA-Approved <span class="highlight">Shockwave Therapy</span> Equipment</h1>
+                <p class="hero-subtitle">Join 3,000+ practices achieving 95% success rates. Write off 100% of your investment with Section 179 before year-end. Immediate ROI guaranteed.</p>
                 
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Treatments Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3,000+</span>
+                        <span class="stat-label">Healthcare Partners</span>
+                    </div>
+                </div>
                 
                 <div class="hero-cta">
-                    <button class="cta-button primary-cta pulse" onclick="openHubSpotModal()" style="background: white; color: var(--primary-color);">Connect with a Shockwave Expert</button>
+                    <a href="#contact" class="cta-button primary-cta pulse">Get Instant Quote + Tax Savings</a>
+                    <a href="#calculator" class="cta-button secondary-cta">Calculate Your ROI</a>
                 </div>
             </div>
             
             <div class="hero-image">
-                <img src="https://www.curamedix.com/hubfs/RPW%2BTablet%2BCupping.jpg" alt="Shockwave Therapy Equipment" class="featured-image">
+                <img src="https://www.curamedix.com/hubfs/Images/image2.png" alt="Shockwave Therapy Equipment" class="featured-image">
             </div>
         </div>
     </section>
@@ -1251,8 +844,9 @@
     <section class="urgency-banner">
         <div class="container">
             <div class="urgency-content">
+                <span class="urgency-icon">⏰</span>
                 <span class="urgency-text">Only <strong id="urgency-days">100 days left</strong> to claim Section 179 tax deduction for 2025</span>
-                <button class="cta-button urgency-cta" onclick="openHubSpotModal()">Claim Your Deduction</button>
+                <a href="#contact" class="cta-button urgency-cta">Claim Your Deduction</a>
             </div>
         </div>
     </section>
@@ -1261,42 +855,13 @@
     <section class="trust-section">
         <div class="container">
             <div class="trust-wrapper">
-                <p class="trust-label">Trusted by healthcare providers and professional sports organizations dedicated to achieving consistent, evidence-based results.</p>
+                <p class="trust-label">Trusted by Leading Healthcare Institutions</p>
                 <div class="trust-logos">
-                    <img src="https://www.curamedix.com/hubfs/Mayo-Clinic-Logo.png" alt="Mayo Clinic" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/Home%20Page%202019/spaulding-network-logo.jpg" alt="Spaulding Network" class="trust-logo transparent-bg">
-                    <img src="https://www.curamedix.com/hubfs/Home%20Page%202019/pamf-logo.jpg" alt="PAMF" class="trust-logo transparent-bg">
-                    <img src="https://www.curamedix.com/hubfs/Intermountain_Health_2023_logo.png" alt="Intermountain Health" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/HSS-Logo.webp" alt="HSS" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/EXO%2BLogo%2B(2).webp" alt="EXO" class="trust-logo">
-                </div>
-                <div class="trust-logos" style="margin-top: 20px;">
-                    <img src="https://www.curamedix.com/hubfs/chicago-bulls-logo.png" alt="Chicago Bulls" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/Dallas-Stars-logo.png" alt="Dallas Stars" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/New_York_Mets.png" alt="New York Mets" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/Oklahoma_City_Thunder.png" alt="Oklahoma City Thunder" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/los-angeles-lakers-logo-football-club-icon-digital-download-free-vector.jpg" alt="Lakers" class="trust-logo transparent-bg">
-                    <img src="https://www.curamedix.com/hubfs/111-1117757_san-francisco-giants-png-image-san-francisco-giants-logo.png" alt="San Francisco Giants" class="trust-logo">
-                    <img src="https://www.curamedix.com/hubfs/kc%20chiefs-1.webp" alt="Kansas City Chiefs" class="trust-logo transparent-bg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advantages Section -->
-    <section class="advantages">
-        <div class="container">
-            <div class="advantages-wrapper">
-                <div class="advantages-content">
-                    <h2 class="section-title">Why Leading Healthcare Providers Choose CuraMedix</h2>
-                    <ul class="advantages-list">
-                        <li>The CuraMedix portfolio of Shockwave and EMTT devices, powered by STORZ Medical, represents the gold standard in regenerative technology.</li>
-                        <li>CuraMedix is proud to represent STORZ Medical as the #1 full-service U.S. distribution partner, supporting the complete suite of Radial Pressure Wave and Focused Shockwave devices.</li>
-                        <li>Partnering with CuraMedix means investing in authentic STORZ Medical technologies, backed by comprehensive training, service, and ongoing clinical support, empowering you to deliver next-level outcomes in patient care.</li>
-                    </ul>
-                </div>
-                <div class="advantages-image">
-                    <img src="https://www.curamedix.com/hubfs/Brian-Nathanson-Application.webp" alt="CuraMedix Shockwave Application" />
+                    <div class="trust-logo">Mayo Clinic</div>
+                    <div class="trust-logo">Cleveland Clinic</div>
+                    <div class="trust-logo">Johns Hopkins</div>
+                    <div class="trust-logo">Mount Sinai</div>
+                    <div class="trust-logo">Kaiser Permanente</div>
                 </div>
             </div>
         </div>
@@ -1306,42 +871,178 @@
     <section id="solutions" class="solutions">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Clinicians leading in outcomes are leading with Shockwave.</h2>
-                <p class="section-subtitle">If you're treating patients with chronic or acute musculoskeletal conditions without Shockwave Therapy, you're missing a proven opportunity to help them heal faster, and risking that they'll seek solutions elsewhere.</p>
-                
-                <div class="conditions-list">
-                    <div class="condition-item">Plantar fasciitis</div>
-                    <div class="condition-item">Tendonitis</div>
-                    <div class="condition-item">Calcific tendinitis</div>
-                    <div class="condition-item">Achilles tendonitis</div>
-                    <div class="condition-item">Tennis elbow</div>
-                    <div class="condition-item">Golfer's elbow</div>
-                    <div class="condition-item">Etc</div>
+                <h2 class="section-title">Revolutionary Shockwave Solutions</h2>
+                <p class="section-subtitle">FDA-approved technology delivering measurable results across multiple specialties</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card featured">
+                    <div class="solution-icon">
+                        <img src="https://www.curamedix.com/hubfs/Images/Untitled%20design%2017.png" alt="Orthopedic Excellence" class="solution-icon-img">
+                    </div>
+                    <div class="solution-card-content">
+                        <h3>Orthopedic Excellence</h3>
+                        <p>Advanced treatment for tendinopathies, calcifications, and chronic pain conditions with proven 85% improvement rates.</p>
+                        <ul class="solution-features">
+                            <li>Non-invasive treatment</li>
+                            <li>No downtime required</li>
+                            <li>Accelerated healing</li>
+                        </ul>
+                        <a href="#contact" class="solution-link">Learn More →</a>
+                    </div>
                 </div>
-                
-                <div class="solutions-cta">
-                    <button class="cta-button primary-cta" onclick="openHubSpotModal()">Ready for game-changing patient outcomes and practice growth?</button>
+                <div class="solution-card featured">
+                    <div class="solution-icon">
+                        <img src="https://www.curamedix.com/hubfs/Images/Untitled%20design%2016.png" alt="Sports Medicine" class="solution-icon-img">
+                    </div>
+                    <div class="solution-card-content">
+                        <h3>Sports Medicine</h3>
+                        <p>Trusted by professional athletes and sports medicine centers for rapid recovery and performance optimization.</p>
+                        <ul class="solution-features">
+                            <li>50% faster recovery</li>
+                            <li>Prevents re-injury</li>
+                            <li>Performance enhancement</li>
+                        </ul>
+                        <a href="#contact" class="solution-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="solution-card featured">
+                    <div class="solution-icon">
+                        <img src="https://www.curamedix.com/hubfs/Images/Untitled%20design%2015.png" alt="Pain Management" class="solution-icon-img">
+                    </div>
+                    <div class="solution-card-content">
+                        <h3>Pain Management</h3>
+                        <p>Drug-free alternative for chronic pain management with lasting results and improved quality of life.</p>
+                        <ul class="solution-features">
+                            <li>Opioid-free solution</li>
+                            <li>Long-lasting relief</li>
+                            <li>Improved mobility</li>
+                        </ul>
+                        <a href="#contact" class="solution-link">Learn More →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="tech-wrapper">
+                <div class="tech-content">
+                    <h2 class="section-title">Cutting-Edge Shockwave Technology</h2>
+                    <p class="tech-description">Our proprietary Focused Shockwave Technology represents the pinnacle of therapeutic innovation, combining precision targeting with unprecedented power control.</p>
+                    
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <img src="https://www.curamedix.com/hubfs/Images/icon-1.svg-1-1.svg" alt="Precision Targeting" class="feature-icon-img">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Precision Targeting</h4>
+                                <p>Advanced imaging integration for accurate treatment delivery</p>
+                            </div>
+                        </div>
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <img src="https://www.curamedix.com/hubfs/Images/icon.svg-7.png" alt="Real-Time Analytics" class="feature-icon-img">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Real-Time Analytics</h4>
+                                <p>Monitor treatment progress with comprehensive data insights</p>
+                            </div>
+                        </div>
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <img src="https://www.curamedix.com/hubfs/Images/icon.svg-3.png" alt="Safety Protocols" class="feature-icon-img">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Safety Protocols</h4>
+                                <p>Built-in safety features ensuring optimal patient care</p>
+                            </div>
+                        </div>
+                        <div class="tech-feature">
+                            <div class="feature-icon">
+                                <img src="https://www.curamedix.com/hubfs/Images/icon.svg-17.png" alt="Customizable Protocols" class="feature-icon-img">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Customizable Protocols</h4>
+                                <p>Adaptable treatment parameters for personalized therapy</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <a href="#contact" class="cta-button primary-cta">Request Technical Specifications</a>
+                </div>
+                <div class="tech-visual">
+                    <div class="tech-stats">
+                        <div class="tech-stat">
+                            <span class="tech-stat-value">2000-5000</span>
+                            <span class="tech-stat-label">Shockwaves per Session</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="tech-stat-value">0.01-0.5</span>
+                            <span class="tech-stat-label">mJ/mm² Energy Flux</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="tech-stat-value">1-21 Hz</span>
+                            <span class="tech-stat-label">Frequency Range</span>
+                        </div>
+                        <div class="tech-stat">
+                            <span class="tech-stat-value">60mm</span>
+                            <span class="tech-stat-label">Max Penetration Depth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proven Clinical Outcomes</h2>
+                <p class="section-subtitle">Evidence-based results from over 500,000 treatments worldwide</p>
+            </div>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-percentage">87%</div>
+                    <h4>Pain Reduction</h4>
+                    <p>Average pain score improvement after 6 sessions</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-percentage">92%</div>
+                    <h4>Patient Satisfaction</h4>
+                    <p>Would recommend treatment to others</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-percentage">3x</div>
+                    <h4>Faster Recovery</h4>
+                    <p>Compared to traditional methods</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-percentage">78%</div>
+                    <h4>Cost Reduction</h4>
+                    <p>In overall treatment expenses</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section 179 Tax Benefits -->
     <section class="section-179">
         <div class="container">
             <div class="section-179-wrapper">
                 <div class="section-179-content">
-                    <div class="tax-badge" style="background: var(--primary-color);">IRS Section 179</div>
+                    <div class="tax-badge">IRS Section 179</div>
                     <h2 class="section-title">Write Off 100% of Your Investment <span class="highlight">This Year</span></h2>
-                    <p class="section-179-intro">The Section 179 tax deduction allows healthcare practices to deduct the full purchase price of qualifying equipment purchased or financed during the tax year. This means you can write off the entire cost of your CuraMedix Shockwave device immediately—rather than depreciating it over several years.</p>
+                    <p class="section-179-intro">The Section 179 tax deduction allows healthcare practices to deduct the full purchase price of qualifying equipment purchased or financed during the tax year. This means you can write off the entire cost of your CuraMedix shockwave therapy system immediately, rather than depreciating it over several years.</p>
                     
                     <div class="tax-benefits-grid">
                         <div class="tax-benefit-card">
-                            <div class="benefit-icon"><img src="https://www.curamedix.com/hubfs/Webinar%20Promotion/Icons/Calculator-Icon.png" alt="Calculator" style="width: 50px; height: 50px;"></div>
+                            <div class="benefit-icon">💵</div>
                             <h3>Immediate Deduction</h3>
-                            <p>Deduct up to $1,220,000 in equipment purchases for 2025, including your entire Shockwave therapy system investment.</p>
+                            <p>Deduct up to $1,160,000 in equipment purchases for 2025, including your entire shockwave therapy system investment.</p>
                         </div>
                         <div class="tax-benefit-card">
                             <div class="benefit-icon">📈</div>
@@ -1349,9 +1050,9 @@
                             <p>Convert your tax savings into immediate working capital. A $150,000 system could save you $55,000+ in taxes this year.</p>
                         </div>
                         <div class="tax-benefit-card">
-                            <div class="benefit-icon"><img src="https://www.curamedix.com/hubfs/Webinar%20Promotion/Icons/Checklist-Icon.png" alt="Checklist" style="width: 40px; height: 40px;"></div>
+                            <div class="benefit-icon">🎯</div>
                             <h3>Qualifying Equipment</h3>
-                            <p>All CuraMedix Shockwave therapy systems qualify as medical equipment under Section 179 guidelines.</p>
+                            <p>All CuraMedix shockwave therapy systems qualify as medical equipment under Section 179 guidelines.</p>
                         </div>
                     </div>
 
@@ -1360,22 +1061,22 @@
                         <div class="calculator-example">
                             <div class="calc-row">
                                 <span>Equipment Cost:</span>
-                                <span class="calc-value">$50,000</span>
+                                <span class="calc-value">$150,000</span>
                             </div>
                             <div class="calc-row">
-                                <span>Tax Savings (assuming 35% tax bracket):</span>
-                                <span class="calc-value">$17,500</span>
+                                <span>Tax Rate (37%):</span>
+                                <span class="calc-value">$55,500</span>
                             </div>
                             <div class="calc-row highlight-row">
-                                <span>Equipment Cost After-Tax Savings:</span>
-                                <span class="calc-value">$32,500</span>
+                                <span>Your Net Cost:</span>
+                                <span class="calc-value">$94,500</span>
                             </div>
                         </div>
                         <p class="calculator-note">*Consult your tax advisor for specific calculations based on your practice's situation.</p>
                     </div>
 
                     <div class="section-179-cta">
-                        <a href="#contact" class="cta-button primary-cta large pulse">Take Advantage of Section 179 Before It's Too Late</a>
+                        <a href="#contact" class="cta-button primary-cta large pulse">Get My Tax Savings Analysis</a>
                         <p class="deadline-warning">⚠️ Section 179 deadline: December 31, 2025</p>
                     </div>
                 </div>
@@ -1387,31 +1088,77 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title">Ready to learn more about Shockwave and how you can maximize your Section 179 tax advantages before year-end?</h2>
+                <h2 class="section-title">Get Your Instant Quote & Tax Savings</h2>
+                <p class="section-subtitle">Complete the form below and we'll send you a personalized quote with your Section 179 tax benefits within 24 hours.</p>
                 
-                <div style="text-align: center; margin: 3rem 0;">
-                    <button class="cta-button primary-cta large" onclick="openHubSpotModal()" style="padding: 20px 40px; font-size: 1.2rem;">
-                        Connect with an Expert
-                    </button>
+                <!-- HubSpot Form Will Go Here -->
+                <div id="hubspot-form-container">
+                    <!-- Your HubSpot form will be embedded here -->
                 </div>
+                
+                <!-- Fallback form for testing -->
+                <form class="contact-form" id="contactForm" style="display: block;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="organization">Organization/Practice Name *</label>
+                        <input type="text" id="organization" name="organization" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="specialty">Medical Specialty *</label>
+                            <select id="specialty" name="specialty" required>
+                                <option value="">Select your specialty</option>
+                                <option value="orthopedics">Orthopedics</option>
+                                <option value="sports-medicine">Sports Medicine</option>
+                                <option value="pain-management">Pain Management</option>
+                                <option value="rehabilitation">Rehabilitation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Primary Interest *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select your interest</option>
+                                <option value="purchase">Equipment Purchase</option>
+                                <option value="lease">Leasing Options</option>
+                                <option value="demo">Demo Request</option>
+                                <option value="training">Training Programs</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additional">Additional Information</label>
+                        <textarea id="additional" name="additional" placeholder="Tell us about your specific needs or questions..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Get My Instant Quote + Tax Savings</button>
+                </form>
             </div>
         </div>
     </section>
-    
-    <!-- HubSpot Form Modal -->
-    <div id="hubspotModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeHubSpotModal()">&times;</span>
-            <div class="modal-header">
-                <h2 style="color: var(--primary-color); margin: 0;">Discover the Benefits of Shockwave and Section 179 Savings</h2>
-            </div>
-            <div class="modal-body">
-                <div id="hubspot-form-container">
-                    <!-- HubSpot form will load here -->
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -1462,60 +1209,6 @@
 
         // Initialize counter
         updateUrgencyCounter();
-        
-        // HubSpot Modal Functions
-        function openHubSpotModal() {
-            document.getElementById('hubspotModal').style.display = 'block';
-            
-            // Load HubSpot form if not already loaded
-            if (!window.hbsptFormLoaded) {
-                loadHubSpotForm();
-                window.hbsptFormLoaded = true;
-            }
-        }
-        
-        function closeHubSpotModal() {
-            document.getElementById('hubspotModal').style.display = 'none';
-        }
-        
-        function loadHubSpotForm() {
-            // Load HubSpot forms script
-            if (!window.hbspt) {
-                const script = document.createElement('script');
-                script.src = '//js.hsforms.net/forms/embed/v2.js';
-                script.charset = 'utf-8';
-                script.type = 'text/javascript';
-                script.onload = function() {
-                    createHubSpotForm();
-                };
-                document.head.appendChild(script);
-            } else {
-                createHubSpotForm();
-            }
-        }
-        
-        function createHubSpotForm() {
-            if (window.hbspt) {
-                hbspt.forms.create({
-                    portalId: "4232994",
-                    formId: "2ff2d455-0a8b-455d-8709-124398420514",
-                    region: "na1",
-                    target: "#hubspot-form-container"
-                });
-            }
-        }
-        
-        // Close modal when clicking outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById('hubspotModal');
-            if (event.target == modal) {
-                closeHubSpotModal();
-            }
-        }
-        
-        // Make functions global
-        window.openHubSpotModal = openHubSpotModal;
-        window.closeHubSpotModal = closeHubSpotModal;
     </script>
 
     <!-- HubSpot Form Embed Script -->
@@ -1535,3 +1228,5 @@
       });
     </script>
     -->
+</body>
+</html>
